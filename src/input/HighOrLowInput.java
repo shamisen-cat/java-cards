@@ -1,22 +1,28 @@
 package input;
 
 public class HighOrLowInput extends StringInput {
-    private HighOrLow answer = null;
+    private HighOrLowEnum answer = null;
     
-    public HighOrLow getAnswer() {
+    public HighOrLowEnum getAnswer() {
         return this.answer;
     }
     
     public void inputValue() {
-        this.answer = null;
+        HighOrLowEnum HIGH = HighOrLowEnum.HIGH;
+        HighOrLowEnum LOW = HighOrLowEnum.LOW;
+        
         super.inputValue();
         
-        if (this.getValue().equals(HighOrLow.HIGH.getKey())) {
-            this.answer = HighOrLow.HIGH;
+        HighOrLowEnum answer = null;
+        
+        if (this.getValue().equals(HIGH.getKey())) {
+            answer = HIGH;
         }
         
-        if (this.getValue().equals(HighOrLow.LOW.getKey())) {
-            this.answer = HighOrLow.LOW;
+        if (this.getValue().equals(LOW.getKey())) {
+            answer = LOW;
         }
+        
+        this.answer = answer;
     }
 }
