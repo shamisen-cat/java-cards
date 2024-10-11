@@ -1,14 +1,14 @@
 package test;
 
-import input.HighOrLow;
+import input.HighOrLowEnum;
 import input.HighOrLowInput;
 
 public class HighOrLowTest {
     public static void main(String[] args) {
-        HighOrLow HIGH = HighOrLow.HIGH;
+        HighOrLowEnum HIGH = HighOrLowEnum.HIGH;
         String high = HIGH.getKey() + ": " + HIGH;
         
-        HighOrLow LOW = HighOrLow.LOW;
+        HighOrLowEnum LOW = HighOrLowEnum.LOW;
         String low = LOW.getKey() + ": " + LOW;
         
         System.out.println("Checking the enum settings.");

@@ -1,12 +1,12 @@
 package input;
 
-public enum HighOrLow {
+public enum HighOrLowEnum {
     HIGH("h"),
     LOW("l");
     
     private final String KEY;
     
-    private HighOrLow(String key) {
+    private HighOrLowEnum(String key) {
         this.KEY = key;
     }
     
