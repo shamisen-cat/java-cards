@@ -1,13 +1,13 @@
 package score;
 
-public enum GameResult {
+public enum GameResultEnum {
     WIN("WIN!!"),
     LOSE("LOSE..."),
     DRAW("DRAW!");
     
     private final String MESSAGE;
     
-    private GameResult(String msg) {
+    private GameResultEnum(String msg) {
         this.MESSAGE = msg;
     }
     

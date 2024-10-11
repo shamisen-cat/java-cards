@@ -1,24 +1,24 @@
 package score;
 
 public class Score {
-    private GameResult gameResult = null;
+    private GameResultEnum gameResult = null;
     
     private int winCount = 0;
     private int loseCount = 0;
     private int drawCount = 0;
     
-    public GameResult getGameResult() {
+    public GameResultEnum getGameResult() {
         return this.gameResult;
     }
     
-    public void setGameResult(GameResult gameResult) {
+    public void setGameResult(GameResultEnum gameResult) {
         this.gameResult = gameResult;
         
-        if (gameResult == GameResult.WIN) {
+        if (gameResult == GameResultEnum.WIN) {
             this.winCount++;
-        } else if (gameResult == GameResult.LOSE) {
+        } else if (gameResult == GameResultEnum.LOSE) {
             this.loseCount++;
-        } else if (gameResult == GameResult.DRAW) {
+        } else if (gameResult == GameResultEnum.DRAW) {
             this.drawCount++;
         }
     }
