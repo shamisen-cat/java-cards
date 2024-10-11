@@ -1,6 +1,6 @@
 package input;
 
-public class HighOrLowInput extends StringInput {
+public class HighOrLow extends StringInput {
     private HighOrLowEnum answer = null;
     
     public HighOrLowEnum getAnswer() {

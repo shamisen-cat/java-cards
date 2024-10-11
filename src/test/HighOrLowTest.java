@@ -1,7 +1,7 @@
 package test;
 
 import input.HighOrLowEnum;
-import input.HighOrLowInput;
+import input.HighOrLow;
 
 public class HighOrLowTest {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class HighOrLowTest {
         System.out.println(low);
         
         System.out.println("Check the operation of HIGH or LOW input.");
-        HighOrLowInput highOrLow = new HighOrLowInput();
+        HighOrLow highOrLow = new HighOrLow();
         
         while (true) {
             System.out.println(
