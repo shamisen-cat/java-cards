@@ -8,15 +8,21 @@ public class HighOrLowInput extends StringInput {
     }
     
     public void inputValue() {
-        this.answer = null;
+        HighOrLowEnum HIGH = HighOrLowEnum.HIGH;
+        HighOrLowEnum LOW = HighOrLowEnum.LOW;
+        
         super.inputValue();
         
-        if (this.getValue().equals(HighOrLowEnum.HIGH.getKey())) {
-            this.answer = HighOrLowEnum.HIGH;
+        HighOrLowEnum answer = null;
+        
+        if (this.getValue().equals(HIGH.getKey())) {
+            answer = HIGH;
         }
         
-        if (this.getValue().equals(HighOrLowEnum.LOW.getKey())) {
-            this.answer = HighOrLowEnum.LOW;
+        if (this.getValue().equals(LOW.getKey())) {
+            answer = LOW;
         }
+        
+        this.answer = answer;
     }
 }
